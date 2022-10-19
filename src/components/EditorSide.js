@@ -6,6 +6,9 @@ import TextEditor from "./TextEditor";
 const useStyles = makeStyles({
   body: {
     background: "#F5F5F5",
+    flex: 3,
+    padding: "100px 0px",
+    overflowY: 'scroll',
   },
   header: {
     display: "flex",
@@ -13,7 +16,7 @@ const useStyles = makeStyles({
   },
   inner_body: {
     marginLeft: 94,
-    marginTop: 160,
+    // marginTop: 160,
   },
   header_text: {
     fontSize: 20,
