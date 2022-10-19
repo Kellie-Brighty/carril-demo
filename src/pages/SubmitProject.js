@@ -4,7 +4,7 @@ import SideBar from '../components/SideBar';
 
 const SubmitProject = () => {
   return (
-    <div style={{display: 'flex'}} >
+    <div style={{display: 'flex', height: "100vh"}} >
       <SideBar />
       <EditorSide />
     </div>

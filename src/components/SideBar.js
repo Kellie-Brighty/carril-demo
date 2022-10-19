@@ -101,7 +101,7 @@ const useStyles = makeStyles({
     width: 329,
   },
   sidebar_footer: {
-    marginTop: 422,
+    // marginTop: 422,
   },
   sidebar_footer_text: {
     textAlign: "right",
@@ -109,7 +109,8 @@ const useStyles = makeStyles({
     fontSize: 16,
     fontWeight: "500",
     cursor: "pointer",
-    marginRight: 28
+    marginRight: 28,
+    marginBottom: 20
   },
 });
 
@@ -141,7 +142,10 @@ const SideBar = () => {
       className={classes.body}
       style={{
         width: windowDimenion.winWidth * 0.375,
-        height: 1024,
+        height: "100%",
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'space-between',
       }}
     >
       <div className={classes.header}>
@@ -161,7 +165,7 @@ const SideBar = () => {
 
       <div
         className={classes.sidebar_text}
-        style={{ marginTop: windowDimenion.winHeight * 0.254 }}
+        // style={{ marginTop: windowDimenion.winHeight * 0.254 }}
       >
         <p className={classes.sidebar_welcome}>Welcome to Carril, Anthony!</p>
         <div className={classes.sidebar_text_header_box}>
@@ -184,10 +188,10 @@ const SideBar = () => {
               Once finished, we will save it to your drafts where you can edit whenever you want or review
             </p>
           </div>
-          <div className={classes.sidebar_footer}>
-            <p className={classes.sidebar_footer_text}>Skip this step</p>
-          </div>
         </div>
+      </div>
+      <div className={classes.sidebar_footer}>
+        <p className={classes.sidebar_footer_text}>Skip this step</p>
       </div>
     </div>
   );
